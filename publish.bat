@@ -1,1 +1,1 @@
-curl.exe --verbose --header 'Authorization: Bearer '=d3F6T2syckw6a25FOWViVGRWTHNTbnZveUxpR0ZOdVIrUWlZOEZKcjB0R3g0bExzbXZXOVM=' --form bundle=@bundle.zip https://central.sonatype.com/api/v1/publisher/upload
+curl --request POST  --verbose --header 'Authorization: Bearer ZW8rSTBuUjA6cEdpQ0duQmFtL2NYV0tVYVphUWdBRjdTNjZRRmczV1dDNWNHd25xc0hzaXU=' --form bundle=@central-bundle.zip https://central.sonatype.com/api/v1/publisher/upload

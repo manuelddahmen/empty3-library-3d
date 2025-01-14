@@ -24,12 +24,13 @@ package one.empty3.feature;
 
 import one.empty3.library.Point2D;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.function.Consumer;
 
 public class Line {
     private int size;
-    static MultiLinkList xys = new MultiLinkList();
+    static ArrayList<P2P2> xys = new ArrayList();
     private int index;
 
     public Line(int... xys) {
@@ -38,10 +39,9 @@ public class Line {
 
         for (int n2 = 0; n2 <= xys.length - 4; n2 += 4
         ) {
-            index =
-                    this.xys.add(new P2P2(new Point2D(xys[n2], xys[n2 + 1]),
-                            new Point2D(xys[n2 + 2], xys[n2 + 3])
-                    ));
+            this.xys.add(new P2P2(new Point2D(xys[n2], xys[n2 + 1]),
+                    new Point2D(xys[n2 + 2], xys[n2 + 3])
+            ));
             size = xys.length / 2;
             /*
             this.xys.add(new MultiLinkList.P2P2(new Point2D(xys[n2], xys[n2 + 1]),

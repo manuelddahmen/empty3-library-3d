@@ -26,14 +26,12 @@ import one.empty3.feature.app.replace.javax.imageio.ImageIO;
 import one.empty3.feature.PixM;
 import one.empty3.io.ProcessFile;
 import one.empty3.library.Point3D;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 
 public class Hist4Contour3 extends ProcessFile {
     private int kMax = 3;
     private double fractMax = 0.05;//0.05;
-    @NotNull
     private Point3D pickedColor = Point3D.O0;
 
     public static class Circle {
